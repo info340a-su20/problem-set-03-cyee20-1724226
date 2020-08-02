@@ -1,4 +1,66 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
   margin: 0;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 1em;
+  flex: 1;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  height: 100%;
+}
+
+.box1 {
+  flex-basis: 240px;
+}
+
+.box2 {
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: #eee;
+}
+
+.box3 {
+  flex-basis: 180px;
+  flex-shrink: 0;
+}
+
+.box2Div {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.card {
+  flex: 0 0 250px;
+  background-color: white;
+  margin: .5rem;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 01px 3px rgba (0, 0, 0, 0.16), 01px 3px rgba (0, 0, 0, 0.23);
+}
+
+.card p {
+  padding: .5rem 1rem;
+}
+
+img {
+  border-radius: 10px 10px 0px 0px;
 }
